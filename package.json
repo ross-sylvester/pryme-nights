@@ -1,0 +1,24 @@
+{
+  "name": "pryme-nights",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ross-sylvester/pryme-nights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ross-sylvester/pryme-nights/issues"
+  },
+  "homepage": "https://github.com/ross-sylvester/pryme-nights#readme",
+  "description": "",
+  "devDependencies": {
+    "canvas": "^3.2.1",
+    "playwright": "^1.58.2"
+  }
+}
