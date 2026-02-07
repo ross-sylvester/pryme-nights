@@ -102,73 +102,7 @@
             letter-spacing: 0.4em;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 3rem;
             animation: fadeIn 1s ease-out 0.3s both;
-        }
-
-        .cta {
-            animation: fadeIn 1s ease-out 0.6s both;
-        }
-
-        .notify-form {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .notify-form input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.875rem 1.25rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 8px;
-            color: #fff;
-            font-size: 0.95rem;
-            font-family: inherit;
-            transition: all 0.2s ease;
-        }
-
-        .notify-form input::placeholder {
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .notify-form input:focus {
-            outline: none;
-            border-color: rgba(255, 255, 255, 0.4);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .notify-form button {
-            padding: 0.875rem 2rem;
-            background: #fff;
-            color: #000;
-            border: none;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            font-family: inherit;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .notify-form button:hover {
-            background: rgba(255, 255, 255, 0.9);
-            transform: translateY(-1px);
-        }
-
-        .notify-form button:active {
-            transform: translateY(0);
-        }
-
-        .success-message {
-            display: none;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.95rem;
-            margin-top: 1rem;
         }
 
         .footer {
@@ -190,15 +124,6 @@
                 font-size: 0.85rem;
                 letter-spacing: 0.3em;
             }
-
-            .notify-form {
-                flex-direction: column;
-            }
-
-            .notify-form input,
-            .notify-form button {
-                width: 100%;
-            }
         }
     </style>
 </head>
@@ -209,26 +134,10 @@
         <img src="/logo-white.png" alt="Pryme Nights" class="logo">
 
         <p class="tagline">Coming Soon</p>
-
-        <div class="cta">
-            <form class="notify-form" id="notifyForm">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Notify Me</button>
-            </form>
-            <p class="success-message" id="successMessage">Thanks! We'll be in touch.</p>
-        </div>
     </div>
 
     <footer class="footer">
         &copy; 2026 Pryme Nights
     </footer>
-
-    <script>
-        document.getElementById('notifyForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            this.style.display = 'none';
-            document.getElementById('successMessage').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
